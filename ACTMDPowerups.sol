@@ -42,8 +42,6 @@ contract ACTMDPowerups is ERC721, Ownable {
 
   Powerup[] powerups;
 
-  mapping(uint256 => address) public powerupOwner;
-
   Worm public payToken;
   address public payTokenAddress;
  
@@ -55,8 +53,8 @@ contract ACTMDPowerups is ERC721, Ownable {
       payToken = Worm(_payTokenAddress);
   }
 
-  function random() private view returns(uint){
-      return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp, totalSupply())));
+  function random(uint _input) private view returns(uint){
+      return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp, _input)));
   }
  
   modifier mintCompliance(uint256 _mintAmount) {
@@ -122,6 +120,21 @@ contract ACTMDPowerups is ERC721, Ownable {
   function setPaused(bool _state) public onlyOwner {
     paused = _state;
   }
+
+  function getPowerup(uint256 _tokenId) public view returns (
+        string memory _healthPowerup,
+        string memory _attackPowerup,
+        string memory _defensePowerup
+        ) //code looks cleaner when the params appear here vs. in the return statement.
+        {
+            uint256 tokenId = _tokenId - 1;
+            require(tokenId < supply.current(), "Token ID doesn't exist.");
+            Powerup storage powerup = powerups[tokenId];//saves space over using memory, which would make a copy
+            
+            _healthPowerup = powerup.healthPowerup;
+            _attackPowerup = powerup.attackPowerup;
+            _defensePowerup = powerup.defensePowerup;
+    }
  
   function _mintLoop(address _receiver, uint256 _mintAmount) internal {
     for (uint256 i = 0; i < _mintAmount; i++) {
@@ -138,28 +151,21 @@ contract ACTMDPowerups is ERC721, Ownable {
 
       supply.increment();
       uint newPowerupId = supply.current();
-
-      uint indexhealth = random() % 10;
+      
+      uint indexhealth = random(8) % 10;
       string memory _healthPowerup = percent[indexhealth];
-
-      uint indexattack = random() % 10;
+      uint indexattack = random(88) % 10;
       string memory _attackPowerup = percent[indexattack];
-
-      uint indexdefense = random() % 10;
+      uint indexdefense = random(188) % 10;
       string memory _defensePowerup = percent[indexdefense];
 
-      /*
-        healthPowerup: _healthPowerup,
-        attackPowerup: _attackPowerup,
-        defensePowerup: _defensePowerup
-      */
       Powerup memory _powerup = Powerup({
-          healthPowerup: "+50",
-          attackPowerup: "+40",
-          defensePowerup: "+30"
+          healthPowerup: _healthPowerup,
+          attackPowerup: _attackPowerup,
+          defensePowerup: _defensePowerup
       });
       powerups.push(_powerup);
-      _transfer(address(0), _receiver, newPowerupId);//transfer from nowhere. Creation event.
+      _safeMint(_receiver, newPowerupId);
     }
   }
  

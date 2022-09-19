@@ -14,13 +14,16 @@ Deploy Worm
 
 Worm 0xfF38fB2D3C2bF64B4e2040B8060c5289B7C11477
 
-Deploy AllCuteThingsMustDie with Worm address
-
 AllCuteThingsMustDie 0xb50bcB27d9c00C225C49082A1C1591a7e534CF04
+
+- Deploy AllCuteThingsMustDie with Worm address
 
 AllCuteThingsMustDieGamePass 0x0C171571A094de61f862bF518a0481bbD292a245
 
-ACTMDPowerups 0x291EC53694e00212995748158f920bBa2fc80d08
+ACTMDPowerups 0x0CAd659E2d4ad687B976b7dDCe3391aa09894CDA
+
+- Contract set Worm as paytoken
+- Player approve Worm token in order to mint Powerups
 
 # Evmos Testnet Details
 
