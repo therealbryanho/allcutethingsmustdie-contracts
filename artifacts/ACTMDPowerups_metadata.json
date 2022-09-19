@@ -848,11 +848,11 @@
 			]
 		},
 		"contracts/allcutethingsmustdie/ATCMDPowerups.sol": {
-			"keccak256": "0xc1c16ddb89ffb2e183f8b04ecb02c864fddf2a0eb690b685f8e001ba2e4941d7",
+			"keccak256": "0x253d94bfcf29ffda3421329a231a3945a57887787a8c4a1dd0426fb7d5b24338",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3847a9524396c8bddbef7d5951bee6d2e95c05f2ed70d4214e2738c23e8405c7",
-				"dweb:/ipfs/Qmc789UZxp4CYgNKq1axXbE4hR3apeZiyhynvocxLfuZgm"
+				"bzz-raw://50a22b70b270dea327c33ebab2e2d0d8d81e0f2c0803c964c0158e687c82bb93",
+				"dweb:/ipfs/QmZPVSDA1ajAeCPyWbHDpfKR1L2JA19CmhWGckGxz1poWY"
 			]
 		},
 		"contracts/allcutethingsmustdie/Worm.sol": {

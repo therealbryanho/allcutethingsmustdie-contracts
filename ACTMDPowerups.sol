@@ -129,7 +129,7 @@ contract ACTMDPowerups is ERC721, Ownable {
       (bool success, ) = payTokenAddress.call(
             abi.encodeWithSignature(
                 "transferFrom(address,address,uint256)",
-                msg.sender,
+                _receiver,
                 address(this),
                 cost
             )
@@ -148,10 +148,15 @@ contract ACTMDPowerups is ERC721, Ownable {
       uint indexdefense = random() % 10;
       string memory _defensePowerup = percent[indexdefense];
 
+      /*
+        healthPowerup: _healthPowerup,
+        attackPowerup: _attackPowerup,
+        defensePowerup: _defensePowerup
+      */
       Powerup memory _powerup = Powerup({
-          healthPowerup: _healthPowerup,
-          attackPowerup: _attackPowerup,
-          defensePowerup: _defensePowerup
+          healthPowerup: "+50",
+          attackPowerup: "+40",
+          defensePowerup: "+30"
       });
       powerups.push(_powerup);
       _transfer(address(0), _receiver, newPowerupId);//transfer from nowhere. Creation event.
