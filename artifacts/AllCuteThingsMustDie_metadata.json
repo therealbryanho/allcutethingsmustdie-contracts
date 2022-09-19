@@ -297,11 +297,11 @@
 			]
 		},
 		"contracts/allcutethingsmustdie/AllCuteThingsMustDie.sol": {
-			"keccak256": "0x2e885bc1ad02b349bf04723d2d266c7359c7c9085982471720b0febcd080dc3c",
+			"keccak256": "0x2700172d3895101f5fe7a09669e8bc4fb03beb444fb5f5270b33440ec7a9e37c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://03ad136b32a50a991090e8ce0ea8be3a8f693d0e6f6cf79a783c1c4d9adf44f0",
-				"dweb:/ipfs/QmZhaJUZGZYnjdzb1S1FRkKDf89ytLBb5BnQC7d4zdF6Fr"
+				"bzz-raw://3c6cd55dd8f2c14e4f05de6a1c2834b42521ecca7511ab7deba27484b3646b6e",
+				"dweb:/ipfs/QmWNq5KEaqJVaFuVtyZmBo46SDMuPu9dkq34PJ1j8kCeqp"
 			]
 		},
 		"contracts/allcutethingsmustdie/Worm.sol": {

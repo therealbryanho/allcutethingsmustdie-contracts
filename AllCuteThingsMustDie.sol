@@ -38,11 +38,19 @@ uint256 public contractMinimum = 10000000000000000000000; // 10000 tokens
             require(_score > minScore, "You did not reach the minimum score to get worms");
         }
 
-        uint256 _tokensEarned = _score * 1 ether;
+        uint256 _tokensEarned = _score * 10 ** 18;
         payToken.mint(address(this), _tokensEarned);
 
         payToken.approve(address(this), _tokensEarned);
-        payToken.transferFrom(address(this), msg.sender, _tokensEarned);
+        //payToken.transferFrom(address(this), msg.sender, _tokensEarned);
+        (bool callsuccess, ) = payTokenAddress.call(
+            abi.encodeWithSignature(
+                "transfer(address,uint256)",
+                msg.sender,
+                _tokensEarned
+            )
+        );
+        require(callsuccess, "Transfer fail");
 
         emit CollectTokens(msg.sender, _tokensEarned);
         return true;
