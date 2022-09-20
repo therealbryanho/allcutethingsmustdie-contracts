@@ -6,7 +6,7 @@ https://allcutethingsmustdie.com
 
 # About
 
-Smart Contracts for our submission for The Evmos Hackathon https://devpost.com/software/all-cute-things-must-die-play-to-earn-game
+Smart Contracts for our submission for the Evmos Momentum Hackathon https://devpost.com/software/all-cute-things-must-die-play-to-earn-game
 
 # Contract Addresses on Evmos Testnet
 
