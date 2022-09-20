@@ -22,6 +22,8 @@ AllCuteThingsMustDieGamePass 0x0EE70384F00489402288e39B1C5a83c8d5D15934
 
 ACTMDPowerups 0x0CAd659E2d4ad687B976b7dDCe3391aa09894CDA
 
+ACTMDHackathonWinnerNFT 0x1018933A07f87e78aD2571469EfB425BB9886879
+
 - Contract set Worm as paytoken
 - Player approve Worm token in order to mint Powerups
 

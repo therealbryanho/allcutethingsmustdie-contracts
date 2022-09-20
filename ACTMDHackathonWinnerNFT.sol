@@ -12,9 +12,7 @@ contract ACTMDHackathonWinnerNFT is ERC721, Ownable {
  
   Counters.Counter private supply;
  
-  string public uriPrefix = "ipfs:// /";
-  string public normal = "normal";
-  string public million = "million";
+  string public uriPrefix = "ipfs://QmdxnuftabLxZBgckisWAg4UhrGNAfHF3bm1H7mMAdFi9u/";
   string public uriSuffix = ".json";
 
   mapping(uint => string) public prizes;
@@ -130,4 +128,3 @@ contract ACTMDHackathonWinnerNFT is ERC721, Ownable {
     return uriPrefix;
   }
 }
-
