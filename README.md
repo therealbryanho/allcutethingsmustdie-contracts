@@ -1,14 +1,14 @@
+# All Cute Things Must Die
+
+All Cute Things Must Die is a hyper-casual play-to-earn game currently on Evmos testnet. Destroy all cute things. All cute things must die. Can you beat the game? Can you score 1000000 points?
+
+https://allcutethingsmustdie.com
+
 # About
 
-Smart Contracts for our submission for The Evmos Hackathon
+Smart Contracts for our submission for The Evmos Hackathon https://devpost.com/software/all-cute-things-must-die-play-to-earn-game
 
-All Cute Things Must Die - Unleash Skullz on this endless survival to kill all cute creatures on the Evmos blockchain.
-
-# More information about All Cute Things Must Die
-
-https://github.com/therealbryanho/allcutethingsmustdie
-
-# Contract Deployments
+# Contract Addresses on Evmos Testnet
 
 Deploy Worm
 
