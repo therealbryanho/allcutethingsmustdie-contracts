@@ -12,7 +12,7 @@ contract AllCuteThingsMustDieGamePass is ERC721, Ownable {
  
   Counters.Counter private supply;
  
-  string public uriPrefix = "";
+  string public uriPrefix = "ipfs://QmfZS8T9vExvyxgqgCHSqRcnwJbemNvyuf5AvgwgVVKEoJ/";
   string public uriSuffix = ".json";
  
   uint256 public cost = 1 ether;
@@ -86,11 +86,7 @@ contract AllCuteThingsMustDieGamePass is ERC721, Ownable {
       _exists(_tokenId),
       "ERC721Metadata: URI query for nonexistent token"
     );
- 
-    string memory currentBaseURI = _baseURI();
-    return bytes(currentBaseURI).length > 0
-        ? string(abi.encodePacked(currentBaseURI, _tokenId.toString(), uriSuffix))
-        : "";
+    return uriPrefix;
   }
  
   function setCost(uint256 _cost) public onlyOwner {
