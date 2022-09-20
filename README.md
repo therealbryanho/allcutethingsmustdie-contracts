@@ -2,7 +2,8 @@
 
 All Cute Things Must Die is a hyper-casual play-to-earn game currently on Evmos testnet. Destroy all cute things. All cute things must die. Can you beat the game? Can you score 1000000 points?
 
-https://allcutethingsmustdie.com
+Web: https://allcutethingsmustdie.com
+Follow: https://twitter.com/NotCuteGame
 
 # About
 
