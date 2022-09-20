@@ -6,7 +6,7 @@ All Cute Things Must Die - Unleash Skullz on this endless survival to kill all c
 
 # More information about All Cute Things Must Die
 
-https://github.com/therealbryanho/all-cute-things-must-die
+https://github.com/therealbryanho/allcutethingsmustdie
 
 # Contract Deployments
 
