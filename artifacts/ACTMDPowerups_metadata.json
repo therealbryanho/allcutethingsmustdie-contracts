@@ -176,6 +176,35 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getPowerup",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_healthPowerup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_attackPowerup",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_defensePowerup",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "owner",
 						"type": "address"
@@ -315,25 +344,6 @@
 			{
 				"inputs": [],
 				"name": "payTokenAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "powerupOwner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -848,11 +858,11 @@
 			]
 		},
 		"contracts/allcutethingsmustdie/ATCMDPowerups.sol": {
-			"keccak256": "0x253d94bfcf29ffda3421329a231a3945a57887787a8c4a1dd0426fb7d5b24338",
+			"keccak256": "0xd442e6cc844c2fd2a74496b8c30715b52bb4ead08e3408fd27532e8ae1cb9454",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://50a22b70b270dea327c33ebab2e2d0d8d81e0f2c0803c964c0158e687c82bb93",
-				"dweb:/ipfs/QmZPVSDA1ajAeCPyWbHDpfKR1L2JA19CmhWGckGxz1poWY"
+				"bzz-raw://c3727b2b2940e9fa57bc2f02b755758a4f79d9829118ba5df4f635a538f76891",
+				"dweb:/ipfs/QmUHLuFFfr2LMHaNy7XWfuMrdQxLWhv2sNMKbUjjHuZcPu"
 			]
 		},
 		"contracts/allcutethingsmustdie/Worm.sol": {
